@@ -10,5 +10,5 @@ jobs:
     name: Test and lint 
     uses: ./.github/workflows/test-and-lint.yml 
     secrets: 
-      DOCKERHUB_USER: ${{var.DOCKERHUB_USERNAME}}
+      DOCKERHUB_USER: ${{secrets.DOCKERHUB_USERNAME}}
       DOCKERHUB_TOKEN: ${{secrets.DOCKERHUB_TOKEN}}
