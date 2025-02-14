@@ -8,7 +8,7 @@ terraform {
 
   backend "s3" {
     bucket               = "cornel-terra-tf-state"
-    key                  = "tf-state-deplo"
+    key                  = "tf-state-deploy"
     workspace_key_prefix = "tf-state_deploy-env"
     region               = "us-east-1"
     encrypt              = true
